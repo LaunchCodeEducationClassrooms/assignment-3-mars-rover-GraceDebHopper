@@ -2,8 +2,8 @@
 //BUT.. reponse prints commands & roverStatus (in incoorect order) w/ other commands too - how to update rover status without printing it (including in results) 
 
 //Tests pass with or without these imports (same level ./)
-const Message = require('./message.js');    
-const Command = require('./command.js');
+//const Message = require('./message.js');    
+//const Command = require('./command.js');
 
 class Rover {
    // Write code here!
