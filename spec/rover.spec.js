@@ -137,7 +137,7 @@ describe("Rover class", function() {
     ];
     let message = new Message ('Test message with 5 commands for move command check and final Test 13 check!', commands);
     let response = rover.receiveMessage(message);
-    console.log(response);
+    //console.log(response);            //comment out commit#3
     
     
     expect(response.results[0].completed).toBeTrue;
@@ -163,23 +163,23 @@ describe("Rover class", function() {
     //**START with trying to print without command andd see what is really in roverStatus
     //console.log(response.results.roverStatus);  //undefined        
     //console.log(response.results.roverStatus.position);   //Failure: TypeError: Cannot read property 'position' of undefined
-    console.log(response.results[1].roverStatus);
+    //console.log(response.results[1].roverStatus); //comment out commit 3
     //Failure: Expected 'LOW_POWER' to equal 'NORMAL'. - - because change later at [2]? - see failures if include in tests - LC only included position in tests and not generatorWatts or mode 
-    console.log(response.results[4].roverStatus);
+    //console.log(response.results[4].roverStatus); //comment out commit 3
     //console.log(response.results[1].roverstatus.position);
     //Failure: TypeError: Cannot read property 'position' of undefined
-    console.log(response.results[1].roverStatus.mode);
-    console.log(response.results[1].roverStatus.generatorWatts);
+    //console.log(response.results[1].roverStatus.mode);//comment out commit 3
+    //console.log(response.results[1].roverStatus.generatorWatts);//comment out commit 3
     //console.log(response.results[1].roverstatus.position);
     //Failure: TypeError: Cannot read property 'position' of undefined
-    console.log(response.results[1].roverStatus.mode);
-    console.log(response.results[1].roverStatus.generatorWatts);
+    //console.log(response.results[1].roverStatus.mode);//comment out commit 3
+    //console.log(response.results[1].roverStatus.generatorWatts); //comment out commit 3
       
     
 
   });
   //Student grading:  all passed!
   // my test: all passed!
-  console.log(response);
+  //console.log(response);
 
 });
